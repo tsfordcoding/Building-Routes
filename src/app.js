@@ -8,6 +8,6 @@ const sayHello = (req, res, next) => {
     res.send("Hello");
 };
 
-app.use(sayHello);
+app.get("/hello", sayHello);
 
 module.exports = app;
